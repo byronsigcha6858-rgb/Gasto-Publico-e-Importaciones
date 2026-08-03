@@ -1,0 +1,5 @@
+Hipótesis_Nula,Estadístico_Traza,Valor_Crítico_95%,Cointegrado
+r <= 0,79.1607,47.8545,True
+r <= 1,46.6934,29.7961,True
+r <= 2,20.8639,15.4943,True
+r <= 3,1.1449,3.8415,False

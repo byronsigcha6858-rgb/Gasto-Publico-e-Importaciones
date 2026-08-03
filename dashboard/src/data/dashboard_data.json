@@ -1,0 +1,492 @@
+{
+  "metadata": {
+    "titulo": "Análisis Econométrico: Gasto Público e Importaciones en Ecuador",
+    "metodologia": "Vector Error Correction Model (VECM)",
+    "observaciones": 59,
+    "periodo_cobertura": "2010-Q2 a 2024-Q4",
+    "variables": [
+      "log_gasto_gobierno",
+      "log_importaciones",
+      "log_pib_real",
+      "log_exportaciones_no_pet"
+    ]
+  },
+  "diagnosticos": {
+    "cointegracion_rank": 1,
+    "num_obs": 57,
+    "num_ecuaciones": 4,
+    "k_ar_diff": 1
+  },
+  "series_historicas": [
+    {
+      "fecha": "2010-Q2",
+      "gasto_gobierno": 7.7964,
+      "importaciones": 9.1902,
+      "pib_real": 10.0684,
+      "exportaciones_no_pet": 8.1796
+    },
+    {
+      "fecha": "2010-Q3",
+      "gasto_gobierno": 7.7974,
+      "importaciones": 9.202,
+      "pib_real": 10.0906,
+      "exportaciones_no_pet": 8.1873
+    },
+    {
+      "fecha": "2010-Q4",
+      "gasto_gobierno": 7.8098,
+      "importaciones": 9.2107,
+      "pib_real": 10.0824,
+      "exportaciones_no_pet": 8.1935
+    },
+    {
+      "fecha": "2011-Q1",
+      "gasto_gobierno": 7.8325,
+      "importaciones": 9.2145,
+      "pib_real": 10.0943,
+      "exportaciones_no_pet": 8.1568
+    },
+    {
+      "fecha": "2011-Q2",
+      "gasto_gobierno": 7.8339,
+      "importaciones": 9.2266,
+      "pib_real": 10.1018,
+      "exportaciones_no_pet": 8.164
+    },
+    {
+      "fecha": "2011-Q3",
+      "gasto_gobierno": 7.8201,
+      "importaciones": 9.214,
+      "pib_real": 10.0862,
+      "exportaciones_no_pet": 8.1703
+    },
+    {
+      "fecha": "2011-Q4",
+      "gasto_gobierno": 7.8318,
+      "importaciones": 9.2129,
+      "pib_real": 10.0897,
+      "exportaciones_no_pet": 8.1766
+    },
+    {
+      "fecha": "2012-Q1",
+      "gasto_gobierno": 7.8183,
+      "importaciones": 9.206,
+      "pib_real": 10.0908,
+      "exportaciones_no_pet": 8.2162
+    },
+    {
+      "fecha": "2012-Q2",
+      "gasto_gobierno": 7.8101,
+      "importaciones": 9.1995,
+      "pib_real": 10.0903,
+      "exportaciones_no_pet": 8.2109
+    },
+    {
+      "fecha": "2012-Q3",
+      "gasto_gobierno": 7.8248,
+      "importaciones": 9.2064,
+      "pib_real": 10.085,
+      "exportaciones_no_pet": 8.196
+    },
+    {
+      "fecha": "2012-Q4",
+      "gasto_gobierno": 7.8449,
+      "importaciones": 9.2267,
+      "pib_real": 10.0982,
+      "exportaciones_no_pet": 8.2307
+    },
+    {
+      "fecha": "2013-Q1",
+      "gasto_gobierno": 7.8383,
+      "importaciones": 9.221,
+      "pib_real": 10.0983,
+      "exportaciones_no_pet": 8.251
+    },
+    {
+      "fecha": "2013-Q2",
+      "gasto_gobierno": 7.8563,
+      "importaciones": 9.2156,
+      "pib_real": 10.1055,
+      "exportaciones_no_pet": 8.2265
+    },
+    {
+      "fecha": "2013-Q3",
+      "gasto_gobierno": 7.804,
+      "importaciones": 9.2147,
+      "pib_real": 10.0941,
+      "exportaciones_no_pet": 8.1783
+    },
+    {
+      "fecha": "2013-Q4",
+      "gasto_gobierno": 7.8456,
+      "importaciones": 9.2296,
+      "pib_real": 10.1092,
+      "exportaciones_no_pet": 8.1833
+    },
+    {
+      "fecha": "2014-Q1",
+      "gasto_gobierno": 7.8303,
+      "importaciones": 9.2068,
+      "pib_real": 10.0907,
+      "exportaciones_no_pet": 8.1965
+    },
+    {
+      "fecha": "2014-Q2",
+      "gasto_gobierno": 7.8231,
+      "importaciones": 9.2159,
+      "pib_real": 10.0931,
+      "exportaciones_no_pet": 8.1673
+    },
+    {
+      "fecha": "2014-Q3",
+      "gasto_gobierno": 7.8166,
+      "importaciones": 9.2149,
+      "pib_real": 10.0938,
+      "exportaciones_no_pet": 8.1801
+    },
+    {
+      "fecha": "2014-Q4",
+      "gasto_gobierno": 7.7772,
+      "importaciones": 9.1886,
+      "pib_real": 10.0727,
+      "exportaciones_no_pet": 8.1834
+    },
+    {
+      "fecha": "2015-Q1",
+      "gasto_gobierno": 7.8053,
+      "importaciones": 9.2123,
+      "pib_real": 10.0874,
+      "exportaciones_no_pet": 8.1763
+    },
+    {
+      "fecha": "2015-Q2",
+      "gasto_gobierno": 7.8128,
+      "importaciones": 9.219,
+      "pib_real": 10.0946,
+      "exportaciones_no_pet": 8.198
+    },
+    {
+      "fecha": "2015-Q3",
+      "gasto_gobierno": 7.8327,
+      "importaciones": 9.2166,
+      "pib_real": 10.0804,
+      "exportaciones_no_pet": 8.1639
+    },
+    {
+      "fecha": "2015-Q4",
+      "gasto_gobierno": 7.8099,
+      "importaciones": 9.2204,
+      "pib_real": 10.0909,
+      "exportaciones_no_pet": 8.1948
+    },
+    {
+      "fecha": "2016-Q1",
+      "gasto_gobierno": 7.8141,
+      "importaciones": 9.204,
+      "pib_real": 10.0952,
+      "exportaciones_no_pet": 8.2052
+    },
+    {
+      "fecha": "2016-Q2",
+      "gasto_gobierno": 7.8284,
+      "importaciones": 9.2146,
+      "pib_real": 10.1045,
+      "exportaciones_no_pet": 8.1901
+    },
+    {
+      "fecha": "2016-Q3",
+      "gasto_gobierno": 7.8454,
+      "importaciones": 9.2198,
+      "pib_real": 10.0912,
+      "exportaciones_no_pet": 8.2186
+    },
+    {
+      "fecha": "2016-Q4",
+      "gasto_gobierno": 7.8432,
+      "importaciones": 9.2214,
+      "pib_real": 10.0942,
+      "exportaciones_no_pet": 8.1715
+    },
+    {
+      "fecha": "2017-Q1",
+      "gasto_gobierno": 7.8279,
+      "importaciones": 9.2249,
+      "pib_real": 10.1027,
+      "exportaciones_no_pet": 8.1768
+    },
+    {
+      "fecha": "2017-Q2",
+      "gasto_gobierno": 7.8339,
+      "importaciones": 9.2488,
+      "pib_real": 10.0981,
+      "exportaciones_no_pet": 8.1809
+    },
+    {
+      "fecha": "2017-Q3",
+      "gasto_gobierno": 7.8194,
+      "importaciones": 9.2185,
+      "pib_real": 10.0927,
+      "exportaciones_no_pet": 8.1982
+    },
+    {
+      "fecha": "2017-Q4",
+      "gasto_gobierno": 7.8356,
+      "importaciones": 9.2284,
+      "pib_real": 10.0991,
+      "exportaciones_no_pet": 8.1739
+    },
+    {
+      "fecha": "2018-Q1",
+      "gasto_gobierno": 7.8138,
+      "importaciones": 9.2208,
+      "pib_real": 10.0923,
+      "exportaciones_no_pet": 8.2193
+    },
+    {
+      "fecha": "2018-Q2",
+      "gasto_gobierno": 7.8149,
+      "importaciones": 9.2204,
+      "pib_real": 10.0954,
+      "exportaciones_no_pet": 8.2092
+    },
+    {
+      "fecha": "2018-Q3",
+      "gasto_gobierno": 7.8257,
+      "importaciones": 9.2185,
+      "pib_real": 10.1033,
+      "exportaciones_no_pet": 8.209
+    },
+    {
+      "fecha": "2018-Q4",
+      "gasto_gobierno": 7.8157,
+      "importaciones": 9.2226,
+      "pib_real": 10.0975,
+      "exportaciones_no_pet": 8.2285
+    },
+    {
+      "fecha": "2019-Q1",
+      "gasto_gobierno": 7.8486,
+      "importaciones": 9.2275,
+      "pib_real": 10.1201,
+      "exportaciones_no_pet": 8.2275
+    },
+    {
+      "fecha": "2019-Q2",
+      "gasto_gobierno": 7.8463,
+      "importaciones": 9.2246,
+      "pib_real": 10.1089,
+      "exportaciones_no_pet": 8.2045
+    },
+    {
+      "fecha": "2019-Q3",
+      "gasto_gobierno": 7.8418,
+      "importaciones": 9.2148,
+      "pib_real": 10.0967,
+      "exportaciones_no_pet": 8.2014
+    },
+    {
+      "fecha": "2019-Q4",
+      "gasto_gobierno": 7.8418,
+      "importaciones": 9.2275,
+      "pib_real": 10.1103,
+      "exportaciones_no_pet": 8.1895
+    },
+    {
+      "fecha": "2020-Q1",
+      "gasto_gobierno": 7.8295,
+      "importaciones": 9.2392,
+      "pib_real": 10.1026,
+      "exportaciones_no_pet": 8.195
+    },
+    {
+      "fecha": "2020-Q2",
+      "gasto_gobierno": 7.8371,
+      "importaciones": 9.2126,
+      "pib_real": 10.1119,
+      "exportaciones_no_pet": 8.2019
+    },
+    {
+      "fecha": "2020-Q3",
+      "gasto_gobierno": 7.8315,
+      "importaciones": 9.2318,
+      "pib_real": 10.1112,
+      "exportaciones_no_pet": 8.2168
+    },
+    {
+      "fecha": "2020-Q4",
+      "gasto_gobierno": 7.8199,
+      "importaciones": 9.2032,
+      "pib_real": 10.0961,
+      "exportaciones_no_pet": 8.1838
+    },
+    {
+      "fecha": "2021-Q1",
+      "gasto_gobierno": 7.8182,
+      "importaciones": 9.2151,
+      "pib_real": 10.101,
+      "exportaciones_no_pet": 8.2324
+    },
+    {
+      "fecha": "2021-Q2",
+      "gasto_gobierno": 7.8244,
+      "importaciones": 9.2256,
+      "pib_real": 10.0969,
+      "exportaciones_no_pet": 8.1838
+    },
+    {
+      "fecha": "2021-Q3",
+      "gasto_gobierno": 7.8468,
+      "importaciones": 9.2228,
+      "pib_real": 10.1019,
+      "exportaciones_no_pet": 8.2152
+    },
+    {
+      "fecha": "2021-Q4",
+      "gasto_gobierno": 7.8427,
+      "importaciones": 9.2235,
+      "pib_real": 10.1185,
+      "exportaciones_no_pet": 8.2353
+    },
+    {
+      "fecha": "2022-Q1",
+      "gasto_gobierno": 7.856,
+      "importaciones": 9.2242,
+      "pib_real": 10.1129,
+      "exportaciones_no_pet": 8.2335
+    },
+    {
+      "fecha": "2022-Q2",
+      "gasto_gobierno": 7.8509,
+      "importaciones": 9.2314,
+      "pib_real": 10.1075,
+      "exportaciones_no_pet": 8.2094
+    },
+    {
+      "fecha": "2022-Q3",
+      "gasto_gobierno": 7.8362,
+      "importaciones": 9.2211,
+      "pib_real": 10.1112,
+      "exportaciones_no_pet": 8.2106
+    },
+    {
+      "fecha": "2022-Q4",
+      "gasto_gobierno": 7.8571,
+      "importaciones": 9.2305,
+      "pib_real": 10.111,
+      "exportaciones_no_pet": 8.1984
+    },
+    {
+      "fecha": "2023-Q1",
+      "gasto_gobierno": 7.8513,
+      "importaciones": 9.2289,
+      "pib_real": 10.1116,
+      "exportaciones_no_pet": 8.1892
+    },
+    {
+      "fecha": "2023-Q2",
+      "gasto_gobierno": 7.877,
+      "importaciones": 9.2278,
+      "pib_real": 10.1143,
+      "exportaciones_no_pet": 8.2113
+    },
+    {
+      "fecha": "2023-Q3",
+      "gasto_gobierno": 7.8464,
+      "importaciones": 9.2473,
+      "pib_real": 10.1157,
+      "exportaciones_no_pet": 8.2135
+    },
+    {
+      "fecha": "2023-Q4",
+      "gasto_gobierno": 7.8537,
+      "importaciones": 9.2398,
+      "pib_real": 10.1215,
+      "exportaciones_no_pet": 8.2117
+    },
+    {
+      "fecha": "2024-Q1",
+      "gasto_gobierno": 7.845,
+      "importaciones": 9.2132,
+      "pib_real": 10.1136,
+      "exportaciones_no_pet": 8.239
+    },
+    {
+      "fecha": "2024-Q2",
+      "gasto_gobierno": 7.8342,
+      "importaciones": 9.2357,
+      "pib_real": 10.1238,
+      "exportaciones_no_pet": 8.2398
+    },
+    {
+      "fecha": "2024-Q3",
+      "gasto_gobierno": 7.871,
+      "importaciones": 9.2302,
+      "pib_real": 10.1194,
+      "exportaciones_no_pet": 8.2559
+    },
+    {
+      "fecha": "2024-Q4",
+      "gasto_gobierno": 7.8819,
+      "importaciones": 9.2597,
+      "pib_real": 10.1469,
+      "exportaciones_no_pet": 8.2622
+    }
+  ],
+  "irf_gasto_hacia_importaciones": [
+    {
+      "periodo": 0,
+      "respuesta": 0.004688,
+      "acumulado": 0.004688
+    },
+    {
+      "periodo": 1,
+      "respuesta": 0.003359,
+      "acumulado": 0.008046
+    },
+    {
+      "periodo": 2,
+      "respuesta": 0.002537,
+      "acumulado": 0.010583
+    },
+    {
+      "periodo": 3,
+      "respuesta": 0.003053,
+      "acumulado": 0.013636
+    },
+    {
+      "periodo": 4,
+      "respuesta": 0.002791,
+      "acumulado": 0.016427
+    },
+    {
+      "periodo": 5,
+      "respuesta": 0.002963,
+      "acumulado": 0.019391
+    },
+    {
+      "periodo": 6,
+      "respuesta": 0.002851,
+      "acumulado": 0.022241
+    },
+    {
+      "periodo": 7,
+      "respuesta": 0.002919,
+      "acumulado": 0.02516
+    },
+    {
+      "periodo": 8,
+      "respuesta": 0.002879,
+      "acumulado": 0.028039
+    },
+    {
+      "periodo": 9,
+      "respuesta": 0.002902,
+      "acumulado": 0.030941
+    },
+    {
+      "periodo": 10,
+      "respuesta": 0.002889,
+      "acumulado": 0.03383
+    }
+  ]
+}

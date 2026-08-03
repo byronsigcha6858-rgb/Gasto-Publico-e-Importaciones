@@ -1,0 +1,17 @@
+# Entorno virtual
+venv/
+env/
+.venv/
+
+# Cache de Python
+__pycache__/
+*.py[cod]
+
+# Datos pesados o sensibles (no subir archivos crudos a GitHub)
+data/raw/*
+!data/raw/.gitkeep
+
+# Resultados pesados o temporales
+.DS_Store
+.vscode/
+.env

@@ -1,0 +1,5 @@
+Variable,ADF_Stat_Niveles,p_value_Niveles,Estacionaria_Niveles,ADF_Stat_Diferencia,p_value_Diferencia,Estacionaria_Diferencia
+log_gasto_gobierno,-0.3356,0.9203,False,-4.0692,0.0011,True
+log_importaciones,-3.1328,0.0242,True,-5.9213,0.0,True
+log_pib_real,-0.4499,0.9014,False,-8.074,0.0,True
+log_exportaciones_no_pet,-2.2225,0.1982,False,-11.1587,0.0,True
