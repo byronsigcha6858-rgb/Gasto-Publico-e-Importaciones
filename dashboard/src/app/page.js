@@ -1,9 +1,26 @@
 'use client';
-import React from 'react';
+import React, { useMemo } from 'react';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, AreaChart, Area } from 'recharts';
 import data from '../data/dashboard_data.json';
 
 export default function DashboardPage() {
+  // Transformación automática a Índice Base 100
+  const seriesTransformadas = useMemo(() => {
+    if (!data.series_historicas || data.series_historicas.length === 0) return [];
+    
+    // Tomamos el primer registro como Base 100
+    const baseGasto = Math.exp(data.series_historicas[0].gasto_gobierno);
+    const baseImp = Math.exp(data.series_historicas[0].importaciones);
+    const basePib = Math.exp(data.series_historicas[0].pib_real);
+
+    return data.series_historicas.map(item => ({
+      ...item,
+      gasto_idx: (Math.exp(item.gasto_gobierno) / baseGasto) * 100,
+      imp_idx: (Math.exp(item.importaciones) / baseImp) * 100,
+      pib_idx: (Math.exp(item.pib_real) / basePib) * 100,
+    }));
+  }, []);
+
   return (
     <div style={{ padding: '2rem', fontFamily: 'system-ui, sans-serif', backgroundColor: '#f8fafc', minHeight: '100vh' }}>
       <header style={{ marginBottom: '2rem', borderBottom: '2px solid #e2e8f0', paddingBottom: '1rem' }}>
@@ -27,20 +44,21 @@ export default function DashboardPage() {
         </div>
       </div>
 
-      {/* Gráfico 1: Series Históricas */}
+      {/* Gráfico 1: Series Históricas en Índice Base 100 */}
       <div style={{ background: '#fff', padding: '1.5rem', borderRadius: '8px', marginBottom: '2rem', boxShadow: '0 1px 3px rgba(0,0,0,0.1)' }}>
-        <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '1rem' }}>Evolución de las Variables Macro (Logs)</h2>
-        <ResponsiveContainer width="100%" height={300}>
-          <LineChart data={data.series_historicas}>
+        <h2 style={{ fontSize: '1.25rem', fontWeight: '600', marginBottom: '0.25rem' }}>Evolución Comparativa de Variables Macro</h2>
+        <p style={{ color: '#64748b', marginBottom: '1rem', fontSize: '0.875rem' }}>Índice de Crecimiento Acumulado (Base 100 = 2010-Q3). Permite visualizar qué variable creció más rápido.</p>
+        
+        <ResponsiveContainer width="100%" height={320}>
+          <LineChart data={seriesTransformadas}>
             <CartesianGrid strokeDasharray="3 3" />
             <XAxis dataKey="fecha" />
-            {/* Se ajusta el eje Y dinámicamente según el mínimo y máximo de los datos */}
             <YAxis domain={['auto', 'auto']} />
-            <Tooltip />
+            <Tooltip formatter={(value) => [`${Number(value).toFixed(2)} pts`, '']} />
             <Legend />
-            <Line type="monotone" dataKey="gasto_gobierno" name="Gasto Público" stroke="#2563eb" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey="importaciones" name="Importaciones" stroke="#dc2626" strokeWidth={2} dot={false} />
-            <Line type="monotone" dataKey="pib_real" name="PIB Real" stroke="#059669" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="gasto_idx" name="Gasto Público (Índice)" stroke="#2563eb" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="imp_idx" name="Importaciones (Índice)" stroke="#dc2626" strokeWidth={2} dot={false} />
+            <Line type="monotone" dataKey="pib_idx" name="PIB Real (Índice)" stroke="#059669" strokeWidth={2} dot={false} />
           </LineChart>
         </ResponsiveContainer>
       </div>
